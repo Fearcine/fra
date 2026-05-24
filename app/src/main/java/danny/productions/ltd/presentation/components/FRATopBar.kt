@@ -1,0 +1,47 @@
+package danny.productions.ltd.presentation.components
+
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import danny.productions.ltd.presentation.theme.DarkBackground
+import danny.productions.ltd.presentation.theme.NeonCyan
+import danny.productions.ltd.presentation.theme.TextPrimary
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FRATopBar(
+    title: String,
+    onBack: (() -> Unit)? = null,
+    actions: @Composable () -> Unit = {}
+) {
+    TopAppBar(
+        title = { Text(text = title, color = TextPrimary) },
+        navigationIcon = {
+            if (onBack != null) {
+                IconButton(onClick = onBack) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                        contentDescription = "Back",
+                        tint = NeonCyan
+                    )
+                }
+            }
+        },
+        actions = { actions() },
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = DarkBackground,
+            scrolledContainerColor = DarkBackground
+        )
+    )
+}
