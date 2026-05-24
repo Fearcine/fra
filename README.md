@@ -1,8 +1,3 @@
-### Prerequisites
-- [Android Studio (Giraffe or newer recommended)](https://developer.android.com/studio)
-- JDK 17
-- Android SDK (API 34)
-
 ### How to Clone and Build
 1. **Clone the repository** to your local machine:
    ```bash
@@ -18,6 +13,11 @@
 4. **Run the App**:
    - Connect your Android device via USB (ensure Developer Options and USB Debugging are enabled) or start an Android Emulator.
    - Click the green **Run (Play)** button in Android Studio, or press `Shift + F10`.
+
+### Prerequisites
+- [Android Studio (Giraffe or newer recommended)](https://developer.android.com/studio)
+- JDK 17
+- Android SDK (API 34)
 
 ## Tech Stack
 - Kotlin
