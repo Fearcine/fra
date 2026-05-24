@@ -1,15 +1,3 @@
-# Face Recognition Attendance (FRA)
-
-FRA is a sophisticated Android application designed for streamlined attendance management using advanced Face Recognition and dynamic QR codes. Built natively with Kotlin and Jetpack Compose, it features a modern, cyber-neon UI.
-
-## Features
-- **Teacher Dashboard**: Create sessions, manage students, view detailed attendance records, and export data directly to Excel (.xlsx).
-- **Student Dashboard**: Quick face registration, instant attendance marking via QR code scanning or live face verification.
-- **Offline First**: All face embeddings and attendance records are stored securely on the device using a local Room Database.
-- **Continuous Real-Time Scanning**: Advanced pipeline to continually process camera frames and match facial embeddings on the fly without manual button presses.
-
-## Installation & Setup
-
 ### Prerequisites
 - [Android Studio (Giraffe or newer recommended)](https://developer.android.com/studio)
 - JDK 17
